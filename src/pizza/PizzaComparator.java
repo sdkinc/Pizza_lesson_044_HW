@@ -10,8 +10,8 @@ public class PizzaComparator implements Comparator<Pizza> {
     if (!o1.getTitle().equals(o2.getTitle())) {
       return o1.getTitle().compareTo(o2.getTitle());
     }
-    if (o1.getSizeAsString().equals(o2.getSizeAsString())) {
-      return o1.getSizeAsString().compareTo(o2.getSizeAsString());
+    if (o1.getSize().equals(o2.getSize())) {
+      return -(o1.getSize().compareTo(o2.getSize()));
     }
     return -(Boolean.compare(o1.isCheesyBorder(), o2.isCheesyBorder()));
   }

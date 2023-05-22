@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Pizza {
 
-  private enum Size {
+  enum Size {
     SMALL,
     MEDIUM,
     LARGE,
@@ -116,8 +116,8 @@ public class Pizza {
     return title;
   }
 
-  public String getSizeAsString() {
-    return size.toString();
+  Size getSize() {
+    return size;
   }
 
   public boolean isCheesyBorder() {
